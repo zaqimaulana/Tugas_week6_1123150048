@@ -15,7 +15,7 @@ class Login extends StatelessWidget {
             children: [
               const SizedBox(height: 50),
 
-              // 🔹 Logo atau Icon
+              // Logo atau Icon
               Center(
                 child: Image.asset(
                   "assets/images/padlock.png",
@@ -27,7 +27,7 @@ class Login extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              // 🔹 Title dan Subtitle
+              // Title dan Subtitle
               const Center(
                 child: Column(
                   children: [
@@ -53,7 +53,7 @@ class Login extends StatelessWidget {
 
               const SizedBox(height: 40),
 
-              // 🔹 Input Email
+              // Input Email
               TextField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
@@ -106,7 +106,7 @@ class Login extends StatelessWidget {
 
               const SizedBox(height: 10),
 
-              // 🔹 Lupa Password
+              // Lupa Password
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
@@ -120,7 +120,7 @@ class Login extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // 🔹 Tombol Login
+              // Tombol Login
               SizedBox(
                 height: 50,
                 child: ElevatedButton(
@@ -140,7 +140,7 @@ class Login extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              // 🔹 Divider dengan teks "atau"
+              // Divider dengan teks "atau"
               Row(
                 children: const [
                   Expanded(
@@ -161,7 +161,7 @@ class Login extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              // 🔹 Tombol Login Google
+              // Tombol Login Google
               SizedBox(
                 height: 50,
                 child: OutlinedButton.icon(
@@ -189,7 +189,7 @@ class Login extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              // 🔹 Teks "Belum punya akun?"
+              // Teks "Belum punya akun?"
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
