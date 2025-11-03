@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'splash_screen_3.dart';
 
-class SplashScreen2 extends StatelessWidget {
-  const SplashScreen2({super.key});
+class SplashScreen3 extends StatelessWidget {
+  const SplashScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +23,7 @@ class SplashScreen2 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Colors.amber,
                 image: DecorationImage(
-                  image: AssetImage("assets/images/splash2.png"),
+                  image: AssetImage("assets/images/splash3.png"),
                   fit: BoxFit.cover,
                   alignment: Alignment.center,
                 ),
@@ -77,7 +76,7 @@ class SplashScreen2 extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFF84a98c), // aktif
+                    color: Color(0xFFedede9), // non-aktif
                   ),
                 ),
                 Container(
@@ -86,7 +85,7 @@ class SplashScreen2 extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFedede9), // non-aktif
+                    color: Color(0xFF84a98c), // aktif
                   ),
                 ),
               ],
@@ -102,10 +101,7 @@ class SplashScreen2 extends StatelessWidget {
                 height: 40,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const SplashScreen3()),
-                    );
+
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF84a98c),
