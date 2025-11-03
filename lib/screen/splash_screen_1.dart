@@ -10,6 +10,9 @@ class SplashScreen1 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+          Spacer(
+            flex: 3,
+          ),
             const SizedBox(height: 50),
 
             // Gambar bulat di tengah
@@ -92,7 +95,7 @@ class SplashScreen1 extends StatelessWidget {
 
             // Tombol Continue
             Container(
-              margin: const EdgeInsets.symmetric(horizontal: 40),
+              margin: EdgeInsets.only(left: 40, right: 40),
               child: SizedBox(
                 width: double.infinity,
                 height: 40,
@@ -103,7 +106,7 @@ class SplashScreen1 extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF84a98c),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(30),
                     ),
                   ),
                   child: const Text(
