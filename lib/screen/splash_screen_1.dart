@@ -6,8 +6,20 @@ class SplashScreen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text("Splash Screen 1"),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: const [
+          //Todo:
+          // karena akan membuat multiple widget
+          // maka membuat children yang bisa menampung banyak
+          // widget "children"
+          // membuat Image bulat
+          // Membuat Title dengan warna hitam
+          // Membuat subtitle
+          // Membuat 3 bullet kecil
+          //. mulai dari warna terang diawal
+          // Membuat Button Continue
+        ],
       ),
     );
   }
