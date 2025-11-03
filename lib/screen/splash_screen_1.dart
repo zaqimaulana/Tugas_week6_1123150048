@@ -11,6 +11,8 @@ class SplashScreen1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const SizedBox(height: 50),
+
+            // Gambar bulat
             Container(
               width: 230,
               height: 230,
@@ -19,22 +21,28 @@ class SplashScreen1 extends StatelessWidget {
                 color: Colors.amber,
                 image: DecorationImage(
                   image: AssetImage("assets/images/splash3.png"),
-                  fit: BoxFit.cover, 
-                  alignment: Alignment.center, 
+                  fit: BoxFit.cover,
+                  alignment: Alignment.center,
                 ),
               ),
             ),
 
-            // TODO:
-            // karena akan membuat multiple widget
-            // maka membuat children yang bisa menampung banyak
-            // widget "children"
-            // membuat Image bulat
-            // Membuat Title dengan warna hitam
-            // Membuat subtitle
-            // Membuat 3 bullet kecil
-            // mulai dari warna terang diawal
-            // Membuat Button Continue
+            const SizedBox(height: 30), // jarak antara gambar dan teks
+
+            // Teks "Welcome"
+            const Text(
+              "Welcome",
+              style: TextStyle(
+                fontSize: 32.0,
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+
+            // TODO berikutnya:
+            // - Tambahkan subtitle
+            // - Tambahkan 3 bullet kecil
+            // - Tambahkan tombol Continue
           ],
         ),
       ),
