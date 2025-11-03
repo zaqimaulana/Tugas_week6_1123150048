@@ -20,7 +20,7 @@ class SplashScreen1 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Colors.amber,
                 image: DecorationImage(
-                  image: AssetImage("assets/images/splash3.png"),
+                  image: AssetImage("assets/images/splash1.png"),
                   fit: BoxFit.cover,
                   alignment: Alignment.center,
                 ),
@@ -88,8 +88,37 @@ class SplashScreen1 extends StatelessWidget {
               ],
             ),
 
-            // TODO berikutnya:
-            // - Tambahkan tombol Continue di bawah dots
+            const SizedBox(height: 20),
+
+            // Tombol Continue
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 40),
+              child: SizedBox(
+                width: double.infinity,
+                height: 40,
+                child: ElevatedButton(
+                  onPressed: () {
+                    // nanti diarahkan ke splash screen 2
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF84a98c),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  child: const Text(
+                    "Continue",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+            const SizedBox(height: 70),
           ],
         ),
       ),
