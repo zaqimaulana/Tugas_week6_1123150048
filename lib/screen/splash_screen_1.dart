@@ -7,9 +7,17 @@ class SplashScreen1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          //Todo:
+        children: [
+          Container(
+            width: 250,
+            height: 250,
+            decoration: const BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.amber,
+            ),
+          ),
+
+          // TODO:
           // karena akan membuat multiple widget
           // maka membuat children yang bisa menampung banyak
           // widget "children"
@@ -17,7 +25,7 @@ class SplashScreen1 extends StatelessWidget {
           // Membuat Title dengan warna hitam
           // Membuat subtitle
           // Membuat 3 bullet kecil
-          //. mulai dari warna terang diawal
+          // mulai dari warna terang diawal
           // Membuat Button Continue
         ],
       ),
