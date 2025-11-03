@@ -12,7 +12,7 @@ class SplashScreen1 extends StatelessWidget {
           children: [
             const SizedBox(height: 50),
 
-            // Gambar bulat
+            // Gambar bulat di tengah
             Container(
               width: 230,
               height: 230,
@@ -27,9 +27,9 @@ class SplashScreen1 extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 30), // jarak antara gambar dan teks
+            const SizedBox(height: 30),
 
-            // Teks "Welcome"
+            // Judul "Welcome"
             const Text(
               "Welcome",
               style: TextStyle(
@@ -39,9 +39,21 @@ class SplashScreen1 extends StatelessWidget {
               ),
             ),
 
+            const SizedBox(height: 10),
+
+            // Subtitle dua baris
+            const Text(
+              "Forgot to bring your wallet when shopping?\nWe are here to help you!",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 16.0,
+                color: Colors.black54,
+                height: 1.5, // jarak antar baris
+              ),
+            ),
+
             // TODO berikutnya:
-            // - Tambahkan subtitle
-            // - Tambahkan 3 bullet kecil
+            // - Tambahkan 3 bullet kecil (indicator)
             // - Tambahkan tombol Continue
           ],
         ),
